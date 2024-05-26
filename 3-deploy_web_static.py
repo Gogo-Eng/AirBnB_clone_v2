@@ -18,6 +18,7 @@ def do_pack():
     """
     local('sudo mkdir -p versions')
     current_time = datetime.now()
+    datetime_format = "%Y-%m-%d%H:%M:%S"
 
     name_format = current_time.strftime(datetime_format)
 
